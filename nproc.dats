@@ -23,9 +23,9 @@ extern int nproc_x86_64() {
 %}
 
 extern
-fun nproc_glibc { n : nat | n > 0 }() : int(n) =
+fun nproc_glibc() : [n:nat] int(n) =
   "mac#"
 
 extern
-fun nproc_x86_64 { n : nat | n > 0 }() : int(n) =
+fun nproc_x86_64() : [n:nat] int(n) =
   "mac#"
