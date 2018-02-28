@@ -1,4 +1,4 @@
-let makePkg = https://raw.githubusercontent.com/vmchale/atspkg/master/dhall/make-pkg.dhall
+let prelude = https://raw.githubusercontent.com/vmchale/atspkg/master/dhall/.dhall
 
 in λ(x : List Integer) → 
-  makePkg { x = x, name = "nproc-ats", githubUsername = "vmchale" }
+  prelude.makePkg { x = x, name = "nproc-ats", githubUsername = "vmchale" }
