@@ -5,8 +5,8 @@
 extern int nproc_glibc() { return get_nprocs(); }
 %}
 
-#if defined(__x86_64__)
 %{^
+#if defined(__x86_64__)
 extern int nproc_x86_64() {
   int t;
 
