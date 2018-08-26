@@ -8,16 +8,14 @@ extern int nproc_glibc() { return get_nprocs(); }
 %{
 // from here: https://stackoverflow.com/a/22330309
 #ifdef __APPLE__
-int get_nprocs_mac() {
+int nproc_mac() {
     int count;
     size_t count_len = sizeof(count);
     sysctlbyname("hw.logicalcpu", &count, &count_len, NULL, 0);
     return count;
 }
 #endif
-%}
 
-%{^
 #if defined(__x86_64__)
 extern int nproc_x86_64() {
   int t;
