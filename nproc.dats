@@ -36,12 +36,12 @@ extern int nproc_x86_64() {
 
 extern
 fun nproc_glibc() : [n:nat] int(n) =
-  "mac#"
+  "ext#"
 
 extern
 fun nproc_mac() : [n:nat] int(n) =
-  "mac#"
+  "ext#"
 
 extern
 fun nproc_x86_64() : [n:nat] int(n) =
-  "mac#"
+  "ext#"
