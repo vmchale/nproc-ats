@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <sys/sysinfo.h>
 
-extern int nproc_glibc() { return get_nprocs(); }
+int nproc_glibc() { return get_nprocs(); }
 %}
 
 %{
